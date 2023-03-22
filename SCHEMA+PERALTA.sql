@@ -11,7 +11,7 @@ CREATE TABLE servicio_vendedor (
  id_servicio INT NOT NULL,
  id_vendedor INT NOT NULL,
  PRIMARY KEY (id_servicio, id_vendedor),
- FOREIGN KEY (id_servicio) REFERENCES servicio(id_servicio),
+ FOREIGN KEY (id_servicio) REFERENCES tipo_servicio(id_servicio),
  FOREIGN KEY (id_vendedor) REFERENCES vendedor(id_vendedor)
 );
 
